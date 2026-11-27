@@ -115,7 +115,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- 02 진행 방식 / 07 제작진 카드 ---------- */
 .ad-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.ad-team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ad-team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .ad-about-card {
   background: var(--ad-card); border: 1px solid var(--ad-line); border-radius: var(--ad-radius-lg);
   padding: 18px; font-size: 13px; color: var(--ad-mute); line-height: 1.7;
@@ -123,6 +123,10 @@ a { color: inherit; text-decoration: none; }
 }
 .ad-about-card strong { display: block; font-size: 13px; color: var(--ad-accent); margin-bottom: 6px; letter-spacing: 0.1em; font-weight: 500; }
 .ad-about-card:hover { transform: translateY(-2px); border-color: var(--ad-line-hover); box-shadow: 0 10px 24px rgba(0,0,0,0.28); }
+.ad-team-grid .ad-about-card { padding: 20px 22px; }
+.ad-team-grid .ad-about-card strong { font-size: 15px; margin-bottom: 12px; }
+.ad-team-role { display: block; color: var(--ad-text); font-size: 14px; font-weight: 500; line-height: 1.6; }
+.ad-team-detail { display: block; color: var(--ad-mute); font-size: 12px; margin-top: 4px; line-height: 1.6; }
 
 /* ---------- 03 포트폴리오 위젯 ---------- */
 .pf-widget { margin-top: 4px; }
@@ -433,11 +437,12 @@ button.ap-chip.on { background: var(--ad-accent); border-color: var(--ad-accent)
   <!-- 07 내부 제작진 -->
   <section class="ad-sec" id="team" data-ad-reveal>
     <div class="ad-sec-head"><span class="ad-num">07</span><h2>내부 제작진</h2></div>
-    <p class="ad-sec-lead">GreyMusicStudio · KIYOLiVE 내부 제작진입니다. 음악 제작과 프로젝트 진행을 함께하며, 작업의 구성과 필요한 전문 분야에 따라 참여합니다.</p>
+    <p class="ad-sec-lead">GreyMusicStudio 내부 제작진입니다. 음악 제작과 프로젝트 진행을 함께하며, 작업의 구성과 필요한 전문 분야에 따라 참여합니다.</p>
     <div class="ad-team-grid">
-      <div class="ad-about-card"><strong>$온니</strong>프로듀서 · 작곡·편곡</div>
-      <div class="ad-about-card"><strong>이루시온</strong>KIYOLiVE 대표 · 믹스 엔지니어 · 보컬 디렉팅</div>
-      <div class="ad-about-card"><strong>Mr.SolLim</strong>프로젝트 매니저(PM)</div>
+      <div class="ad-about-card"><strong>GreyKim</strong><span class="ad-team-role">GreyMusicStudio 대표 · 믹스 엔지니어</span><span class="ad-team-detail">프로듀서</span></div>
+      <div class="ad-about-card"><strong>$온니</strong><span class="ad-team-role">작곡가 · 프로듀서</span><span class="ad-team-detail">믹스 엔지니어</span></div>
+      <div class="ad-about-card"><strong>이루시온</strong><span class="ad-team-role">보컬 디렉터 · 믹스 엔지니어</span><span class="ad-team-detail">보컬 에디터</span></div>
+      <div class="ad-about-card"><strong>Mr.SolLim</strong><span class="ad-team-role">프로젝트 매니저</span><span class="ad-team-detail">영상 편집자</span></div>
     </div>
   </section>
 
